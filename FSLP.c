@@ -48,7 +48,7 @@ int main(){
                 printf("Error: mkdir requires a folder name\n");
             }
             else if(_mkdir(arg) == 0){
-                printf("Directory %s created succesully!\n", arg);
+                continue;
             }
             else{
                 perror("Error");
@@ -76,7 +76,7 @@ int main(){
                 printf("Error: rmdir requires a folder\n");
             }
             else if (_rmdir(arg) == 0){
-                printf("Directory %s deleted succesfully\n", arg);
+                continue;
             }
             else{
                 perror("Error");
@@ -92,7 +92,7 @@ int main(){
                 printf("Error: you must write a path\n");
             }
             else if(_chdir(arg) == 0){
-                printf("You changed directory to %s succesfully!\n", arg);
+                continue;
             }
             else{
                 perror("Error\n");
