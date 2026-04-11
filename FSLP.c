@@ -65,7 +65,9 @@ int main(){
             }
             else{
                 while((de = readdir(dr)) != NULL){
-                    printf("%s\n", de->d_name);
+                    printf("%s", de->d_name);
+                    printf(" ");
+                    printf("\n");
                 }
                 closedir(dr);
             }
