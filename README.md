@@ -11,7 +11,7 @@ simple shell like program for windows written on c
 
 ## How to compile
 Download MinGW (GCC):
-''' bash
+'''
 gcc FSLP.c -o FSLP.exe
 ./FSLP.exe
 
